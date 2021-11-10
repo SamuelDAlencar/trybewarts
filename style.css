@@ -16,6 +16,7 @@ body {
 }
 
 .trybewarts-login {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -24,8 +25,7 @@ body {
   border: 0;
 }
 
-#email,
-#senha {
+#email, #senha {
   border-radius: 3px;
   border: 0;
   margin: 10px;
@@ -65,20 +65,12 @@ main,
   flex-direction: column;
 }
 
-#HoFs,
-#SQL,
-#React,
-#Python,
-#Jest {
+#HoFs, #SQL, #React, #Python, #Jest {
   display: flex;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-.trybewarts-login {
-  display: flex;
 }
 
 #submit-btn {
