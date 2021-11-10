@@ -28,3 +28,12 @@ textArea.addEventListener('input', () => {
   const count = countMax - textArea.value.length;
   contador.innerText = count;
 });
+
+function apgForm() {
+  const form = document.getElementById('evaluation-form');
+  for (let i = form.children.length - 1; i >= 0; i -= 1) {
+    form.children[i].remove();
+  }
+}
+
+btnEnviar.addEventListener('click', apgForm);
