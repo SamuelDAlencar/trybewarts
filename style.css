@@ -25,7 +25,7 @@ body {
   border: 0;
 }
 
-#email, #senha {
+#email , #senha {
   border-radius: 3px;
   border: 0;
   margin: 10px;
@@ -41,8 +41,7 @@ body {
   cursor: pointer;
 }
 
-main,
-#evaluation-form {
+main , #evaluation-form {
   display: flex;
 }
 
@@ -65,7 +64,7 @@ main,
   flex-direction: column;
 }
 
-#HoFs, #SQL, #React, #Python, #Jest {
+#HoFs , #SQL , #React , #Python , #Jest {
   display: flex;
 }
 
