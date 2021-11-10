@@ -29,6 +29,8 @@ textArea.addEventListener('input', () => {
   contador.innerText = count;
 });
 
+// - Movi a função que apaga o form pra cá pra poder fazer uso dos valores dos inputs em alguns testes antes de apagar o formulário -
+
 function apgForm() {
   const form = document.getElementById('evaluation-form');
   for (let i = form.children.length - 1; i >= 0; i -= 1) {
