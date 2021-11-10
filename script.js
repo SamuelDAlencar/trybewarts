@@ -35,5 +35,16 @@ function apgForm() {
     form.children[i].remove();
   }
 }
+// btnEnviar.addEventListener('click', apgForm);
 
-btnEnviar.addEventListener('click', apgForm);
+btnEnviar.addEventListener('click', (event) => {
+  const form = document.getElementById('evaluation-form');
+  const name = document.getElementById('input-name').value;
+  const surname = document.getElementById('input-lastname').value;
+  const email = document.getElementById('email').value;
+
+  form.appendChild(document.createElement('p')).innerText = 'Nome: ' + name + ' ' + surname;
+  console.log(name);
+
+  event.preventDefault();
+});
