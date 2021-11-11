@@ -29,8 +29,6 @@ textArea.addEventListener('input', () => {
   contador.innerText = count;
 });
 
-// - Movi e comentei a função que apaga o form pra cá pra poder fazer uso dos valores dos inputs em alguns testes antes de apagar o formulário -
-
 function apgForm() {
   const form = document.getElementById('evaluation-form');
   for (let i = form.children.length - 1; i >= 0; i -= 1) {
@@ -59,7 +57,7 @@ function selectedSubjects() {
       materiasSelec.push(materiasInput[i].value);
     }
   }
-  return materiasSelec;
+  return materiasSelec.join(', ');
 }
 
 btnEnviar.addEventListener('click', (event) => {
@@ -74,8 +72,8 @@ btnEnviar.addEventListener('click', (event) => {
   form.appendChild(document.createElement('p')).innerText = `Nome: ${nameValue} ${surnameValue}`;
   form.appendChild(document.createElement('p')).innerText = `Email: ${emailValue}`;
   form.appendChild(document.createElement('p')).innerText = `Casa: ${houseValue}`;
-  form.appendChild(document.createElement('p')).innerText = `Familia: ${family}`;
-  form.appendChild(document.createElement('p')).innerText = `Materias: ${selectedSubjects()}`;
+  form.appendChild(document.createElement('p')).innerText = `Família: ${family}`;
+  form.appendChild(document.createElement('p')).innerText = `Matérias: ${selectedSubjects()}`;
   form.appendChild(document.createElement('p')).innerText = `Avaliação: ${avaliation}`;
   form.appendChild(document.createElement('p')).innerText = `Observações: ${observationValue}`;
   event.preventDefault();
