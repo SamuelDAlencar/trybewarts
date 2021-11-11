@@ -49,8 +49,20 @@ function selectedHouse() {
   }
 }
 
+const materiasInput = document.querySelectorAll('.subject');
+const materiasSelec = [];
+const form = document.getElementById('evaluation-form');
+
+function selectedSubjects() {
+  for (let i = 0; i < materiasInput.length; i += 1) {
+    if (materiasInput[i].checked) {
+      materiasSelec.push(materiasInput[i].value);
+    }
+  }
+  return materiasSelec;
+}
+
 btnEnviar.addEventListener('click', (event) => {
-  const form = document.getElementById('evaluation-form');
   const nameValue = document.getElementById('input-name').value;
   const surnameValue = document.getElementById('input-lastname').value;
   const emailValue = document.getElementById('input-email').value;
@@ -63,6 +75,7 @@ btnEnviar.addEventListener('click', (event) => {
   form.appendChild(document.createElement('p')).innerText = `Email: ${emailValue}`;
   form.appendChild(document.createElement('p')).innerText = `Casa: ${houseValue}`;
   form.appendChild(document.createElement('p')).innerText = `Familia: ${family}`;
+  form.appendChild(document.createElement('p')).innerText = `Materias: ${selectedSubjects()}`;
   form.appendChild(document.createElement('p')).innerText = `Avaliação: ${avaliation}`;
   form.appendChild(document.createElement('p')).innerText = `Observações: ${observationValue}`;
   event.preventDefault();
