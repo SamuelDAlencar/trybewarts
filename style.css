@@ -43,6 +43,7 @@ body {
 
 main , #evaluation-form {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
