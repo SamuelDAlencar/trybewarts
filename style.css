@@ -1,13 +1,19 @@
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 50;
+  letter-spacing: 1px;
+  background-color: azure;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px;
 }
 
 #logo-header {
@@ -21,11 +27,12 @@ body {
 }
 
 #trybewarts-header-title {
-  font-size: 60px;
+  font-size: 40px;
   border: 0;
 }
 
-#email , #senha {
+#email,
+#senha {
   border-radius: 3px;
   border: 0;
   margin: 10px;
@@ -41,9 +48,34 @@ body {
   cursor: pointer;
 }
 
-main , #evaluation-form {
+main {
+  padding: 30px;
+}
+
+main,
+#evaluation-form {
   display: flex;
   justify-content: space-around;
+}
+
+input {
+  border: 0.1px solid;
+  border-radius: 3px;
+  background-color: white;
+  padding: 5px;
+  margin: 3px;
+}
+
+#house {
+  font-size: 17px;
+}
+
+#family,
+#contents-section,
+#feedback,
+#feedback-text,
+#agreement {
+  margin-top: 15px;
 }
 
 #evaluation-form {
@@ -56,6 +88,10 @@ main , #evaluation-form {
   flex-direction: row;
 }
 
+#evaluation-form div {
+  margin-left: 10px;
+}
+
 #email-house-section {
   display: flex;
 }
@@ -65,8 +101,21 @@ main , #evaluation-form {
   flex-direction: column;
 }
 
-#HoFs , #SQL , #React , #Python , #Jest {
+#contents-section section {
+  margin-left: 10px;
+}
+
+#HoFs,
+#SQL,
+#React,
+#Python,
+#Jest {
   display: flex;
+}
+
+#textarea {
+  margin: 5px 0px 0px 10px;
+  resize: vertical;
 }
 
 #trybewarts-forms-logo {
@@ -74,5 +123,18 @@ main , #evaluation-form {
 }
 
 #submit-btn {
-  width: 75px;
+  margin-top: 15px;
+  width: fit-content;
+  border: 0;
+  border-radius: 3px;
+  padding: 15px 25px;
+  background-color: rgb(50, 167, 145);
+  font-size: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 0.1px solid rgb(139, 139, 139);
+  background-color: rgb(50, 167, 145);
 }

@@ -39,20 +39,26 @@
             <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </section>
-
-        <label for="" id="label-family">Qual sua família?</label>
-        <div>
-          <input type="radio" name="family" id="frontend" value="Frontend" />
-          <label for="frontend">Frontend</label>
-        </div>
-        <div>
-          <input type="radio" name="family" id="backend" value="Backend" />
-          <label for="backend">Backend</label>
-        </div>
-        <div>
-          <input type="radio" name="family" id="fullstack" value="FullStack" />
-          <label for="fullstack">FullStack</label>
-        </div>
+        <section id="family">
+          <label for="" id="label-family">Qual sua família?</label>
+          <div>
+            <input type="radio" name="family" id="frontend" value="Frontend" />
+            <label for="frontend">Frontend</label>
+          </div>
+          <div>
+            <input type="radio" name="family" id="backend" value="Backend" />
+            <label for="backend">Backend</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="family"
+              id="fullstack"
+              value="FullStack"
+            />
+            <label for="fullstack">FullStack</label>
+          </div>
+        </section>
 
         <section id="contents-section">
           <label for="" id="label-content"
@@ -109,16 +115,18 @@
           <input type="radio" name="rate" id="" value="10" />10
         </section>
 
-        <label for="" class="textarea">Deixe seu comentário:</label>
-        <textarea
-          name=""
-          id="textarea"
-          cols="30"
-          rows="10"
-          maxlength="500"
-        ></textarea>
-        <p>Caracteres restantes: <span id="counter">500</span></p>
-        <section>
+        <section id="feedback-text">
+          <label for="" class="textarea">Deixe seu comentário:</label>
+          <textarea
+            name=""
+            id="textarea"
+            cols="50"
+            rows="10"
+            maxlength="500"
+          ></textarea>
+          <p>Caracteres restantes: <span id="counter">500</span></p>
+        </section>
+        <section id="agreement">
           <input type="checkbox" name="" id="agreement" />
           <label for="agreement" id="label-infos"
             >Você concorda com o uso das informações acima?</label
