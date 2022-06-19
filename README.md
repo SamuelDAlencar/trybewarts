@@ -1,6 +1,8 @@
 # Trybewarts 🧹
 
-Responsive Harry Potter themed form made in group alongside @PaulaTortato and @Juliane-Alves
+Responsive Harry Potter themed form made in group alongside @PaulaTortato and @Juliane-Alves.
+
+Project made during the fundamentals module at Trybe.
 
 # Skills put into practice ✍
 
